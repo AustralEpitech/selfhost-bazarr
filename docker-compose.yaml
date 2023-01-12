@@ -15,7 +15,7 @@ services:
       - certs:/etc/letsencrypt/
 
   bazarr:
-    build: bazarr/
+    build: bazarr
     restart: unless-stopped
     volumes:
       - /media/:/data/
